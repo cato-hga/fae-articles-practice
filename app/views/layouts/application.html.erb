@@ -2,6 +2,8 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <title>FaeArticlesPractice</title>
     <%= csrf_meta_tags %>
@@ -12,7 +14,14 @@
 
   <body>
     <nav class="navbar navbar-inverse bg-inverse">
-        <!-- Navbar content -->
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "My Blog", root_path, :class => "colors-nav" %></li>
+          <li><%= link_to "About", root_path, :class => "colors-nav"  %></li>
+          <li><%= link_to "Contact", 'https://github.com/cato-hga', :class => "colors-nav" %></li>
+          <li id="testing">Tiffany Cato</li>
+        </ul>
+      </div>
     </nav>
     <div class="container">
       

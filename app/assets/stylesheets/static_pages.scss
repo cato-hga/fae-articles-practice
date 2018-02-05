@@ -8,12 +8,39 @@ body{
   background-size: 100%;
 }
 
+#testing{
+  font-family: 'Dancing Script', cursive;
+  font-size: 160%;
+  position: absolute;
+  color: lightgoldenrodyellow;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  top: 20%;
+}
+
+.navbar-inverse .navbar-nav  li  a {
+  font-family: 'Josefin Slab', sans-serif;
+  color: lightgoldenrodyellow;
+}
+
 h1{
   font-family: 'Josefin Slab', sans-serif;
+  font-size: -webkit-xxx-large;
   color: black;
-  background-color: white;
   position: absolute; /* CENTERED TEXT*/
   top: 50%; /* CENTERED TEXT*/
+  left: 50%; /* CENTERED TEXT*/
+  transform: translate(-50%, -50%); /* CENTERED TEXT*/
+}
+
+h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: xx-large;
+  color: black;
+  position: absolute; 
+  top: 65%; /* CENTERED TEXT*/
   left: 50%; /* CENTERED TEXT*/
   transform: translate(-50%, -50%); /* CENTERED TEXT*/
 }
