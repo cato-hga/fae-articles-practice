@@ -1,0 +1,26 @@
+<%= simple_form_for @contact_form, url: create_contact_form_url do |f| %>
+  <!-- <%= notice %>
+  <%= @contact_form.errors.full_messages.join(', ') %> -->
+
+  <center>
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">Contact</div>
+            <div class="panel-body">
+             <%= f.input :name, required: true, placeholder: 'name' %> 
+            </div>
+            <div class="panel-body">
+             <%= f.input :email, placeholder: 'email', placeholder: 'email' %> 
+            </div>
+            <div class="panel-body">
+              <%= f.input :body, as: :text, label: 'Message', placeholder: 'Message', :class => "form-control"%>
+            </div>
+            <%= f.button :submit, 'Submit!', :class => "btn-primary" %>
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </center>
+
+<% end %>

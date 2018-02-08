@@ -1,4 +1,27 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "articles.scss";
-@import "static_pages.scss"
+@import "static_pages.scss";
+@import "contact_forms.scss";
+
+
+input, textarea {
+  display: block;
+}
+
+input.btn.btn-default{
+  margin: 20px;
+}
+
+textarea.form-control {
+    height: 250px;
+    resize: none;
+}
+
+.panel-default .panel-heading {
+  background-color: lightgoldenrodyellow;
+}
+
+.colors-nav {
+  font-size: 18px;
+}

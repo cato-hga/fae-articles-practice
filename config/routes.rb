@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root "static_pages#welcome"
 
+  get 'contact-me', to: 'contact_forms#new', as: 'new_contact_form'
+  post 'contact-me', to: 'contact_forms#create', as: 'create_contact_form'
+
   resources :articles
   resources :static_pages
 
