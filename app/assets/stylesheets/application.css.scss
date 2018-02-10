@@ -22,6 +22,10 @@ textarea.form-control {
   background-color: lightgoldenrodyellow;
 }
 
-.colors-nav {
-  font-size: 18px;
+.colors-nav:after {
+  content: " // ";
+  color: gray;
+  font-size: large;
+  padding: 5 10px;
 }
+
